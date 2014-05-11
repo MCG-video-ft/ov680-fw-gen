@@ -1,0 +1,10 @@
+This is a simple tool to create ov680 firmware.
+
+How to use:
+1.Create a "ov680_debug_fw.h" to replace the current one in this folder. 
+   That header file shall contain an instruction array named "ov680_debug_fw".
+2.Make the tool "ov680_debug_fw" based on the new ov680_debug_fw.h
+   by just running "make".
+3.Run "ov680_debug_fw" with no arguments needed.
+   The "ov680_fw.bin" will be output. Put it under /etc/firmware on devices.
+
